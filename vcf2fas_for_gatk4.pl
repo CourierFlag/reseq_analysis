@@ -2,6 +2,7 @@
 open (O,'<',$ARGV[0]);
 open (P,'>','sequence3.fas');
 while ($a = <O>){
+		print "$.\n";
 		chomp $a;
 		if ($a =~ /^#CHROM/){
 				@list = split /\t+/, $a;
